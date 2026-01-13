@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Light Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #f5f3ee;
+            --text-dark: #3a3a3a;
+            --text-light: #666666;
+            --accent-blue: #6ba3e8;
+            --footer-dark: #3a3a3a;
+            --border-color: #d4cfc4;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--text-light);
+            background-color: var(--cream);
+            font-size: 1.125rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 5rem 2.5rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Baskervville', Georgia, serif;
+            color: var(--text-dark);
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 .italic {
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 2.375rem;
+            margin-bottom: 3rem;
+            margin-top: 5rem;
+        }
+
+        h3 {
+            font-size: 1.375rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+
+        .intro {
+            font-size: 1.8125rem;
+            line-height: 1.8;
+            margin-bottom: 5rem;
+            max-width: 700px;
+            font-family: 'Baskervville', Georgia, serif;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 5rem 0;
+        }
+
+        .section {
+            margin-bottom: 3.75rem;
+        }
+
+        .section-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3.75rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-label {
+            font-weight: 400;
+            color: var(--text-dark);
+            font-family: 'Baskervville', Georgia, serif;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .section-text {
+            line-height: 1.8;
+        }
+
+        .section-text ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .section-text li {
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-text li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        .subsection {
+            margin-top: 2rem;
+        }
+
+        .subsection-title {
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 1.5rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #5a92d7;
+            transform: translateY(-0.0625rem);
+            box-shadow: 0 0.25rem 0.75rem rgba(107, 163, 232, 0.3);
+        }
+
+        .tagline {
+            text-align: center;
+            font-family: 'Baskervville', Georgia, serif;
+            font-size: 2.375rem;
+            font-style: italic;
+            color: var(--text-dark);
+            margin: 5rem 0 2.5rem;
+        }
+
+        .tagline-text {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 5rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: var(--footer-dark);
+            color: #cccccc;
+            padding: 3.75rem 2.5rem;
+            margin-top: 7.5rem;
+        }
+
+        .footer-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+        }
+
+        .footer-section h4 {
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03125rem;
+        }
+
+        .footer-section a {
+            color: #cccccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-brand {
+            text-align: center;
+            margin-top: 3.75rem;
+            font-family: 'Baskervville', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2.5rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.625rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-top: 3.75rem;
+            }
+
+            .section-content {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Subtle fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(1.25rem);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container > * {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .container > *:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .container > *:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="italic">This is</span> Light Work</h1>
+        
+        <div class="intro">
+            At Light Work, I help leaders navigate complex transitions and growth, clarify organizational challenges and core story, and identify unseen opportunities. My intuitive approach combines strategic insight with operational expertise to create clarity where it's needed most
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>Work with me</h2>
+
+        <div class="section">
+            <div class="section-content">
+                <h3 class="section-label">Approach</h3>
+                <div class="section-text">
+                    I work at the intersection of intuition and analysis, bringing both data-driven thinking and perceptive narrative insight to help organizations move and evolve with boldness and clarity.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h3 class="section-label">Process</h3>
+                <div class="section-text">
+                    <p>I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy.</p>
+                    
+                    <p style="margin-top: 16px;"><strong>Engagement Models Include:</strong></p>
+                    <ul>
+                        <li>One-time deep-dive project</li>
+                        <li>Incubator design or monthly embedded model</li>
+                        <li>Biostanced advisory guidance</li>
+                        <li>Organizational or story audit</li>
+                        <li>Fractional co-founder/leadership embed</li>
+                    </ul>
+                    
+                    <p style="margin-top: 16px;">Bring your questions and your experiences, and we will go together, far, & fast.</p>
+                    
+                    <div class="subsection">
+                        <div class="subsection-title">Discovery Work</div>
+                        <p>I map history, current state, vision ahead. Together we develop and clarify the heart of what you're building and the core narrative that should anchor our work.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <div class="subsection-title">Results</div>
+                        <p>Incisive recommendations. Identity & historical clarity. KPI development & data story. Blue sky ideas. Strategy roadmapping. Story essence & voice scripting. Often: discovery of secondary work (process, org design, culture, thought leadership).</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <div class="subsection-title">Engagement Models</div>
+                        <p>Coaching. Advisory. Embedded partnership. Insight & launch incubator. Campaign direction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h3 class="section-label">Accessibility</h3>
+                <div class="section-text">
+                    I believe good counsel should be available to those doing important work. That's why I reserve space each quarter for select sliding scale and scholarship engagements.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h3 class="section-label">Connect</h3>
+                <div class="section-text">
+                    Currently booking engagements through 2027.
+                    <br>
+                    <a href="mailto:hello@lightwork.co" class="cta-button">Connect with me!</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>About</h2>
+
+        <div class="section">
+            <div class="section-content">
+                <h3 class="section-label">My Story</h3>
+                <div class="section-text">
+                    <p>I've spent my career helping organizations navigate periods of significant change. As the founder of Light Work, I bring a unique combination of strategic vision and intuitive understanding to help leaders see the unseen dynamics within their organizations.</p>
+                    
+                    <p style="margin-top: 16px;">My background spans operational leadership, strategic advising, and organizational design, all informed by my ongoing creative practice and interest in how systems evolve and adapt.</p>
+                    
+                    <p style="margin-top: 16px;">I believe the most valuable insights often emerge from the spaces between conventional metrics—the human dynamics, cultural nuances, and unspoken patterns that shape how organizations function.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h3 class="section-label">Working Style</h3>
+                <div class="section-text">
+                    I serve as a trusted advisor rather than a traditional consultant. My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and availability for each partnership.
+                </div>
+            </div>
+        </div>
+
+        <div class="tagline">Come to us cloudy</div>
+        <div class="tagline-text">
+            Our favorite projects & collaborators are often in foggy conditions with talented, ambitious leaders and could use a mirror, divining rod or a compass tune-up.
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Follow Me</h4>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Keep in touch</h4>
+                <a href="mailto:hello@lightwork.co">Email</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Site</h4>
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+        
+        <div class="footer-brand">This is Light Work</div>
+    </footer>
+</body>
+</html>
