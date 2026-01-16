@@ -47,10 +47,10 @@
     ],
     "process": {
       "title": "How We Work",
-      "description": "I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy."
+      "description": "Every engagement begins with deep listening—understanding the question in the foreground, heartfelt musings and ponderings, your history and context. We align on an engagement design to start, knowing we'll often discover even better questions and goals as we go.Whether we're working on personal advisory, leadership team strategy, or organizational transformation, it's as much discovery and insight mining as anything else. The work reveals itself as we unlock what's already there."
     },
     "accessibility": {
-      "content": "I believe good counsel should be available to those doing important work. That's why I reserve space each quarter for select sliding scale and scholarship engagements."
+      "content": "I believe good counsel should be available to those doing important work. That's why I reserve space each quarter for scholarship engagements. Get in touch."
     }
   },
   "about": {
@@ -68,7 +68,7 @@
     },
     "how_i_work": {
       "title": "How I Work",
-      "content": "I serve as a trusted advisor rather than a traditional consultant. My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and availability for each partnership."
+      "content": "I serve as a trusted advisor and intuitive guide rather than a traditional coach or consultant. My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and availability for each partnership."
     },
     "beloveds": {
       "title": "Beloveds",
@@ -103,7 +103,7 @@
   },
   "offerings_enterprise": {
     "hero": {
-      "title": "Executive & Enterprise Strategy",
+      "title": "Enterprise & Executive Strategy",
       "subtitle": "Discovery, narrative architecture, and strategic counsel for organizations"
     },
     "intro": "For institutional leaders and organizations navigating complexity, transformation, and strategic inflection points.",
@@ -163,18 +163,19 @@
       "items": [
         "Building something that doesn't exist yet",
         "Soul-searching or building culture",
-        "Navigating major transitions and figuring out what's next",
+        "Navigating major transitions",
+        "Figuring out what's next",
         "Leading teams through complexity"
       ],
-      "context": "You might be post-exit, post-pivot, or pulling something new into existence. The traditional path doesn't quite fit what you're building."
+      "context": "You might be post-exit, pre-pivot, or pulling something new into existence. The traditional path doesn't quite fit what you're building."
     },
     "come_cloudy": {
       "title": "Come cloudy.",
-      "description": "Before things are ready to bloom, they get stormy—that's where ideas gestate, where something new is forming. Some of my favorite collaborators are talented, ambitious leaders in foggy conditions who could use a mirror, divining rod, or compass tune-up—the perfect name for your next solid step forward. Together, we illuminate the unseen. We discover patterns you can't see from inside, surface what's implicit, translate murky vision into clarity.",
+      "description": "Before things are ready to bloom, they get stormy—that's where ideas gestate, where something new is forming. Some of my favorite collaborators are talented, ambitious leaders in foggy conditions who could use a mirror, divining rod, or compass tune-up—the perfect foundation for your next solid step forward. Together, we illuminate the unseen. We discover patterns you can't see from inside, surface what's implicit, translate murky vision into clarity.",
       "closing": "Leave light-footed."
     },
     "modes": {
-      "heading": "Three Modes of Working",
+      "heading": "Advising for",
       "items": [
         {
           "name": "Individual",
