@@ -32,7 +32,10 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <h1 data-field="hero_title">About</h1>
+        <div class="about-header">
+            <img id="about-page-photo" src="" alt="Haley Hoffman" class="about-page-photo">
+            <h1 data-field="hero_title">About</h1>
+        </div>
 
         <div class="divider"></div>
 
@@ -119,6 +122,11 @@
 
             // Set hero
             document.querySelector('[data-field="hero_title"]').textContent = pageData.hero.title;
+
+            // Set photo
+            if (pageData.photo) {
+                document.getElementById('about-page-photo').src = pageData.photo;
+            }
 
             // Populate My Story paragraphs
             if (pageData.my_story && pageData.my_story.paragraphs) {

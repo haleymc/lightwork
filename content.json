@@ -58,6 +58,7 @@
       "title": "About",
       "subtitle": ""
     },
+    "photo": "/images/haley_portrait.jpeg",
     "my_story": {
       "title": "My Story",
       "paragraphs": [
@@ -195,7 +196,7 @@
       ]
     },
     "about_preview": {
-      "photo": "",
+      "photo": "/images/haley_portrait.jpeg",
       "name": "Haley Hoffman",
       "bio": "I've spent 15+ years helping people and organizations navigate significant change. My background spans product strategy (TED.com 2.0 redesign), management consulting (Incandescent, including White House facilitation), and strategic advisory with founders, leaders, and enterprises. I work at the intersection of intuition and analysis. My ongoing creative practice informs how I approach strategic challenges—I help you see familiar problems from new angles and identify solutions that emerge from understanding rather than forcing.",
       "link_text": "More about me",

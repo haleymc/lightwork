@@ -60,7 +60,7 @@ collections:
                 name: "about_preview"
                 widget: "object"
                 fields:
-                  - {label: "Photo", name: "photo", widget: "string", required: false}
+                  - {label: "Photo", name: "photo", widget: "image", required: false}
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "Bio", name: "bio", widget: "text"}
                   - {label: "Link Text", name: "link_text", widget: "string"}
@@ -76,6 +76,8 @@ collections:
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+
+              - {label: "Photo", name: "photo", widget: "image", required: false}
 
               - label: "My Story"
                 name: "my_story"

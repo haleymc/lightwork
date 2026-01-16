@@ -74,8 +74,8 @@
         <!-- Small About Preview -->
         <section class="section" id="about-preview">
             <div class="section-content">
-                <div>
-                    <!-- Placeholder for photo -->
+                <div class="about-photo-container">
+                    <img id="about-photo" src="" alt="Haley Hoffman" class="about-photo">
                     <h3 data-field="about_name">Haley Hoffman</h3>
                 </div>
                 <div class="section-text">
@@ -165,6 +165,9 @@
             document.querySelector('[data-field="modes_heading"]').textContent = homeData.modes.heading;
 
             // Set about preview
+            if (homeData.about_preview.photo) {
+                document.getElementById('about-photo').src = homeData.about_preview.photo;
+            }
             document.querySelector('[data-field="about_name"]').textContent = homeData.about_preview.name;
             document.querySelector('[data-field="about_bio"]').textContent = homeData.about_preview.bio;
             document.querySelector('[data-field="about_link_text"]').textContent = homeData.about_preview.link_text;
