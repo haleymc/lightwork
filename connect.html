@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect — Light Work Studios</title>
+  <meta name="description" content="Start a conversation with Haley Hoffman, or book a standalone Session directly. Strategic advisory for founders, executives, and creative leaders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script>if(localStorage.getItem('lw-theme')==='ink')document.documentElement.dataset.palette='ink';</script>
+  <!-- Calendly widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body data-page="connect">
+
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-wordmark">Light Work</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/the-work.html">The Work</a></li>
+        <li class="nav-book"><a href="/connect.html">Connect</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <div class="connect-page fade-in">
+
+      <!-- Intro conversation -->
+      <h1>Let's talk.</h1>
+      <p class="connect-intro" data-field="intro">Start with a conversation. We'll talk about what you're navigating and whether there's a good fit.</p>
+
+      <div class="calendly-area">
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/haley-chung/light-work-intro-call"
+             style="min-width:320px;height:640px;">
+        </div>
+      </div>
+
+      <p class="connect-fallback">Or email me directly: <a href="mailto:haley@thisislight.work">haley@thisislight.work</a></p>
+
+      <!-- Session booking -->
+      <div style="margin-top:6rem; padding-top:5rem; border-top:1px solid var(--border);" id="session">
+        <span class="section-label">Book a Session</span>
+        <p style="font-size:1.05rem; line-height:1.78; max-width:var(--max-prose); color:var(--text-secondary); margin-bottom:3rem;" data-field="session_description">A short intake call followed by a full working session. Full attention, no ongoing commitment. Good for a pressure-test, a specific crossroads, or when you need someone outside the room to tell you what they see.</p>
+
+        <div class="session-pricing-table" style="margin-bottom:3.5rem;">
+          <div class="price-block">
+            <span class="price-label">Session</span>
+            <span class="price-amount">$1,000</span>
+          </div>
+        </div>
+
+        <div class="calendly-area">
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/haley-chung/intake-and-intro"
+               style="min-width:320px;height:640px;">
+          </div>
+        </div>
+
+        <p class="connect-fallback">Or email me directly: <a href="mailto:haley@thisislight.work">haley@thisislight.work</a></p>
+
+        <p class="connect-fallback" style="margin-top:3rem;">I reserve a small number of spots each season for sliding scale and scholarship engagements. If cost is a barrier to access, <a href="mailto:haley@thisislight.work">email me</a>.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cta">
+          <p class="footer-cta-text">Ready to start a conversation?</p>
+          <a href="/connect.html" class="footer-cta-link">Get in touch &rarr;</a>
+        </div>
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <a href="mailto:haley@thisislight.work">haley@thisislight.work</a>
+          <a href="https://haleymchung.substack.com/" target="_blank" rel="noopener">Light Table on Substack</a>
+          <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-icon-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <strong>Site</strong>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/the-work.html">The Work</a>
+          <a href="/connect.html">Connect</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copyright">Light Work Studios &copy; 2026</span>
+          <button class="footer-theme-toggle" id="themeToggle" aria-label="Toggle theme">◑</button>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrap -->
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script src="/content-loader.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

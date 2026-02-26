@@ -1,164 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Light Work</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Light Work Studios</title>
+  <meta name="description" content="Haley Hoffman — strategist, narrative architect, consigliere. Background at TED, Incandescent, and years of advisory for founders, executives, and creative leaders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script>if(localStorage.getItem('lw-theme')==='ink')document.documentElement.dataset.palette='ink';</script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="main-nav" id="mainNav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">Light Work</a>
-            <ul class="nav-menu">
-                <li class="nav-dropdown">
-                    <span>Advising</span>
-                    <ul class="dropdown-menu">
-                        <li><a href="/offerings/individual.html">Individual</a></li>
-                        <li><a href="/offerings/enterprise.html">Executive & Enterprise</a></li>
-                        <li><a href="/offerings/special-projects.html">Special Projects</a></li>
-                    </ul>
-                </li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Connect</a></li>
-            </ul>
+<body data-page="about">
+
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-wordmark">Light Work</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/the-work.html">The Work</a></li>
+        <li class="nav-book"><a href="/connect.html">Connect</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- Hero -->
+    <header class="inner-hero fade-in">
+      <h1>Haley Hoffman</h1>
+      <p class="subtitle" data-field="subtitle">Story strategist &amp; consigliere.</p>
+    </header>
+
+    <!-- Body -->
+    <div class="about-page-body">
+
+      <img src="/images/haley_portrait.jpeg" alt="Haley Hoffman" class="about-page-photo fade-in">
+
+      <div class="prose-section fade-in" data-paragraphs="bio">
+        <p>I've spent my career helping organizations navigate periods of significant change. My background spans product strategy at TED, management consulting at Incandescent (including facilitation at the White House), and years of advisory for enterprises, startups, and creative leaders in transition.</p>
+        <p>My background spans operational leadership, strategic advising, and organizational design, all informed by an ongoing creative practice and deep interest in how systems evolve and adapt.</p>
+        <p>I believe the most important insights often emerge from the spaces between conventional metrics — the human dynamics, cultural nuances, and unspoken patterns that shape how organizations actually function. I see narrative gaps before anyone else does. And I know how to name them in a way that moves things forward.</p>
+      </div>
+
+      <div class="prose-section fade-in">
+        <h2>How I work</h2>
+        <div data-paragraphs="how_i_work">
+          <p>I serve as a trusted advisor — a consigliere — rather than a traditional coach or consultant. I'm a collaborator in the room with leadership who names what others can't yet see, and helps break up the in-groupness of teams that have been too close to their own work for too long.</p>
+          <p>My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and real availability for each partnership.</p>
+          <p>I bring a legal-analytical mind alongside narrative strategy — comprehending nuanced subjects the way a lawyer understands regulatory complexity, and rendering that precision into organizational design and compelling business narratives. I'm a writer and strategic thinker first. I thrive in partnership with talented designers and visual communicators.</p>
         </div>
-    </nav>
+      </div>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="about-header">
-            <img id="about-page-photo" src="" alt="Haley Hoffman" class="about-page-photo">
-            <h1 data-field="hero_title">About</h1>
+      <div class="prose-section fade-in">
+        <h2>Light Work Studios</h2>
+        <div data-paragraphs="studio">
+          <p>Light Work Studios is a creative consultancy and studio practice. Among its offerings is a curated advisory practice for founders, leaders, and creative people whose ambitions outpace the language they currently have for them.</p>
+          <p>I have a degree in English literature from Duke University, a book in progress about postpartum neuroplasticity and language acquisition, and a Substack called Light Table. I write because the most important stories are the ones nobody has articulated yet.</p>
         </div>
+      </div>
 
-        <div class="divider"></div>
+      <div class="about-meta fade-in">
+        <strong>Background</strong>
+        Product Strategy, TED &nbsp;&middot;&nbsp; Management Consulting, Incandescent &nbsp;&middot;&nbsp; Strategic Advisory, Light Work Studios &nbsp;&middot;&nbsp; English Literature, Duke University
 
-        <!-- My Story -->
-        <section class="section">
-            <div class="section-content">
-                <h3 class="section-label">My Story</h3>
-                <div class="section-text" id="my-story">
-                    <!-- Will be populated by content loader -->
-                </div>
-            </div>
-        </section>
+        <strong>Selected clients and collaborations</strong>
+        TED &nbsp;&middot;&nbsp; Incandescent &nbsp;&middot;&nbsp; The Rockefeller Foundation &nbsp;&middot;&nbsp; Harvest &nbsp;&middot;&nbsp; Happily
 
-        <div class="divider"></div>
+        <strong>Writing</strong>
+        <a href="https://haleymchung.substack.com/" target="_blank" rel="noopener">Light Table on Substack</a>
+      </div>
 
-        <!-- How I Work -->
-        <section class="section">
-            <div class="section-content">
-                <h3 class="section-label">How I Work</h3>
-                <div class="section-text">
-                    <p data-field="how_i_work_content"></p>
-                </div>
-            </div>
-        </section>
+      <div class="about-cta-section fade-in">
+        <p data-field="cta_text">Start with a conversation. We'll talk about what you're navigating.</p>
+        <a href="/connect.html" class="hero-cta">Get in touch</a>
+      </div>
 
-        <div class="divider"></div>
-
-        <!-- Beloveds -->
-        <section class="section">
-            <h2 data-field="beloveds_title">Beloveds</h2>
-            <p class="section-text" data-field="beloveds_intro">Content, ideas, and people I love and recommend.</p>
-
-            <div id="beloveds-list" style="margin-top: 2rem;">
-                <!-- Will be populated by content loader -->
-                <p style="font-style: italic; color: var(--text-light);">Coming soon: curated links to articles, books, people, art, playlists, and substacks.</p>
-            </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <!-- CTA -->
-        <section class="section" style="text-align: center;">
-            <h2>Ready to explore what's possible?</h2>
-            <a href="/contact.html" class="cta-button">Book an intro chat</a>
-        </section>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <a href="mailto:haley@thisislight.work" data-global="email">Email</a>
-                <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" data-global="linkedin">LinkedIn</a>
-                <a href="https://www.instagram.com/haleymchung/" target="_blank" data-global="instagram">Instagram</a>
-            </div>
-
-            <div class="footer-section">
-                <h4>Site</h4>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/portfolio.html">Portfolio</a>
-                <a href="/contact.html">Connect</a>
-            </div>
-
-            <div class="footer-section">
-                <h4>Ready to explore?</h4>
-                <a href="/contact.html" class="cta-button">Book an intro chat</a>
-            </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cta">
+          <p class="footer-cta-text">Ready to start a conversation?</p>
+          <a href="/connect.html" class="footer-cta-link">Book an intro conversation &rarr;</a>
         </div>
-
-        <div class="footer-brand" data-global="site_name">Light Work</div>
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <a href="mailto:haley@thisislight.work">haley@thisislight.work</a>
+          <a href="https://haleymchung.substack.com/" target="_blank" rel="noopener">Light Table on Substack</a>
+          <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-icon-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <strong>Site</strong>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/the-work.html">The Work</a>
+          <a href="/connect.html">Connect</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copyright">Light Work Studios &copy; 2026</span>
+          <button class="footer-theme-toggle" id="themeToggle" aria-label="Toggle theme">◑</button>
+        </div>
+      </div>
     </footer>
 
-    <script src="/nav.js"></script>
-    <script src="/content-loader.js"></script>
-    <script>
-        // Load about page content
-        document.addEventListener('DOMContentLoaded', async () => {
-            await loadPageContent('about');
+  </div><!-- /page-wrap -->
 
-            const response = await fetch('/content.json');
-            const data = await response.json();
-            const pageData = data.about;
-
-            // Set hero
-            document.querySelector('[data-field="hero_title"]').textContent = pageData.hero.title;
-
-            // Set photo
-            if (pageData.photo) {
-                document.getElementById('about-page-photo').src = pageData.photo;
-            }
-
-            // Populate My Story paragraphs
-            if (pageData.my_story && pageData.my_story.paragraphs) {
-                const myStoryContainer = document.getElementById('my-story');
-                myStoryContainer.innerHTML = pageData.my_story.paragraphs.map((p, i) =>
-                    `<p${i > 0 ? ' style="margin-top: 16px;"' : ''}>${p}</p>`
-                ).join('');
-            }
-
-            // Set How I Work
-            document.querySelector('[data-field="how_i_work_content"]').textContent = pageData.how_i_work.content;
-
-            // Set Beloveds
-            document.querySelector('[data-field="beloveds_title"]').textContent = pageData.beloveds.title;
-            document.querySelector('[data-field="beloveds_intro"]').textContent = pageData.beloveds.intro;
-
-            // Populate Beloveds links (when available)
-            if (pageData.beloveds.links && pageData.beloveds.links.length > 0 && pageData.beloveds.links[0].url !== '#') {
-                const belovedsList = document.getElementById('beloveds-list');
-                belovedsList.innerHTML = pageData.beloveds.links.map(link => `
-                    <div class="section" style="margin-bottom: 2rem;">
-                        <div class="section-content">
-                            <div class="section-label" style="font-size: 1rem;">${link.category || ''}</div>
-                            <div class="section-text">
-                                <h4 style="margin-bottom: 0.5rem;"><a href="${link.url}" target="_blank" style="color: var(--text-dark); text-decoration: none;">${link.title}</a></h4>
-                                <p>${link.description}</p>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            }
-        });
-    </script>
+  <script src="/content-loader.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>

@@ -1,188 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Work - Strategic Advisory</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Work Studios — Strategic Advisory &amp; Narrative Architecture</title>
+  <meta name="description" content="Light Work Studios is the practice of Haley Hoffman — strategic advisory, narrative architecture, and creative partnership for leaders building into the unknown.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script>if(localStorage.getItem('lw-theme')==='ink')document.documentElement.dataset.palette='ink';</script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="main-nav" id="mainNav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">Light Work</a>
-            <ul class="nav-menu">
-                <li class="nav-dropdown">
-                    <span>Advising</span>
-                    <ul class="dropdown-menu">
-                        <li><a href="/offerings/individual.html">Individual</a></li>
-                        <li><a href="/offerings/enterprise.html">Enterprise</a></li>
-                        <li><a href="/offerings/special-projects.html">Special Projects</a></li>
-                    </ul>
-                </li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Connect</a></li>
-            </ul>
-        </div>
-    </nav>
+<body data-page="home">
 
-    <div class="container">
-        <!-- Hero Section -->
-        <h1 data-field="title">LIGHT WORK</h1>
-        <p class="intro" data-field="subtitle">Strategic advisory for people building into the unknown.</p>
-        <p data-field="intro">I help leaders navigate transitions, clarify what matters, and translate vision into action.</p>
-        <a href="/contact.html" class="cta-button" data-field="cta_text">Book an intro chat</a>
-
-        <div class="divider"></div>
-
-        <!-- Audience Section -->
-        <section class="section" id="audience">
-            <h2 data-field="audience_heading">I work with founders, executives, and creators who are:</h2>
-            <ul id="audience-list" class="section-text">
-                <!-- Will be populated by content-loader.js -->
-            </ul>
-            <p class="section-text" data-field="audience_context">You might be post-exit, post-pivot, or pulling something new into existence. The traditional path doesn't quite fit what you're building.</p>
-        </section>
-
-        <div class="divider"></div>
-
-        <!-- Come Cloudy Section -->
-        <section class="section" id="come-cloudy">
-            <div class="tagline" data-field="come_cloudy_title">Come cloudy.</div>
-            <div class="tagline-text" data-field="come_cloudy_description">
-                The most fertile minds get cloudy—that's where ideas gestate, where something new is forming. Our favorite collaborators are talented, ambitious leaders in foggy conditions who could use a mirror, divining rod, or compass tune-up—the perfect name for your next solid step forward. We illuminate the unseen. We help you see patterns you can't see from inside, surface what's implicit, translate murky vision into clarity.
-            </div>
-            <div class="tagline-closing" data-field="come_cloudy_closing">Leave light-footed.</div>
-        </section>
-
-        <div class="divider"></div>
-
-        <!-- Three Modes Section -->
-        <section class="section" id="modes">
-            <h2 data-field="modes_heading">Three Modes</h2>
-            <div id="modes-container">
-                <!-- Will be populated by content-loader.js -->
-            </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <!-- Small About Preview -->
-        <section class="section" id="about-preview">
-            <div class="section-content">
-                <div class="about-photo-container">
-                    <img id="about-photo" src="" alt="Haley Hoffman" class="about-photo">
-                    <h3 data-field="about_name">Haley Hoffman</h3>
-                </div>
-                <div class="section-text">
-                    <p data-field="about_bio">I've spent 15+ years helping people and organizations navigate significant change. My background spans product strategy (TED.com 2.0 redesign), management consulting (Incandescent, including White House facilitation), and strategic advisory with founders, leaders, and enterprises. I work at the intersection of intuition and analysis. My ongoing creative practice informs how I approach strategic challenges—I help you see familiar problems from new angles and identify solutions that emerge from understanding rather than forcing.</p>
-                    <a href="/about.html" data-field="about_link_text">More about me →</a>
-                </div>
-            </div>
-        </section>
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-wordmark">Light Work</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/the-work.html">The Work</a></li>
+        <li class="nav-book"><a href="/connect.html">Connect</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <a href="mailto:haley@thisislight.work" data-global="email">Email</a>
-                <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" data-global="linkedin">LinkedIn</a>
-                <a href="https://www.instagram.com/haleymchung/" target="_blank" data-global="instagram">Instagram</a>
-            </div>
+  <div class="page-wrap">
 
-            <div class="footer-section">
-                <h4>Site</h4>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/portfolio.html">Portfolio</a>
-                <a href="/contact.html">Connect</a>
-            </div>
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Alchemical sun seal -->
+      <svg class="hero-seal" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <circle cx="50" cy="50" r="30"/>
+        <circle cx="50" cy="50" r="5"/>
+        <line x1="50" y1="12" x2="50" y2="18"/>
+        <line x1="88" y1="50" x2="82" y2="50"/>
+        <line x1="50" y1="88" x2="50" y2="82"/>
+        <line x1="12" y1="50" x2="18" y2="50"/>
+      </svg>
 
-            <div class="footer-section">
-                <h4>Ready to explore?</h4>
-                <a href="/contact.html" class="cta-button">Book an intro chat</a>
-            </div>
+      <span class="hero-wordmark">Light Work</span>
+      <span class="hero-byline">Haley Hoffman</span>
+      <p class="hero-intro" data-field="hero_intro">I'm a strategist and narrative architect. I discover foundational stories, clarify direction, and build strategy into compelling narratives and action. I work with founders, executives, and creative leaders navigating transitions — offering thought partnership, strategic clarity, and narrative development for people doing work that matters.</p>
+      <a href="/connect.html" class="hero-cta">Book an intro conversation</a>
+    </section>
+
+    <hr class="rule">
+
+    <!-- The Work -->
+    <section class="section fade-in" id="the-work">
+      <span class="section-label">The Work</span>
+      <div data-paragraphs="the_work">
+        <p>I do this work because I believe storytelling is business strategy, not downstream communication.</p>
+        <p>Every organization and venture has a narrative thread running through it — embedded in the culture, the product, the pricing, the org chart, how you hire, how you spend your time. Most of the time, nobody has named it. I read that thread. I check whether it's true. And I help you build from it.</p>
+        <p>I see narrative gaps before anyone else does. When story, strategy, and operations are aligned — when the thread holds — things work. People feel it. Customers feel it. The team can articulate what they're doing and why without a script.</p>
+        <p>My work is finding the thread, checking if it's true, and helping you build from it. The looking and the doing aren't separate phases. To see clearly is already to start moving.</p>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Come Cloudy -->
+    <section class="come-cloudy fade-in" id="come-cloudy">
+      <span class="tagline-open">Come cloudy.</span>
+      <p class="tagline-body" data-field="come_cloudy_body">Our favorite collaborators are talented, ambitious leaders in foggy conditions who could use a mirror, divining rod, or compass tune-up — the perfect name for your next solid step forward. I illuminate the unseen. I help you see patterns you can't see from inside, surface what's implicit, translate murky vision into clarity.</p>
+      <span class="tagline-close">Leave light-footed.</span>
+    </section>
+
+    <hr class="rule">
+
+    <!-- About Preview -->
+    <section class="about-preview fade-in" id="about">
+      <div class="about-preview-inner">
+        <div class="about-photo-col">
+          <img src="/images/haley_portrait.jpeg" alt="Haley Hoffman" class="about-photo">
         </div>
+        <div class="about-text">
+          <h2 class="about-name">Haley Hoffman</h2>
+          <p data-field="about_preview_p1">I've spent my career helping organizations navigate periods of significant change. My background spans product strategy at TED, management consulting at Incandescent (including facilitation at the White House), and years of advisory for enterprises, startups, and creative leaders in transition.</p>
+          <p data-field="about_preview_p2">I operate as a consigliere — a trusted voice in the room with leadership who names what others can't yet see.</p>
+          <p data-field="about_preview_p3">Light Work Studios is a creative consultancy and studio practice — strategic advisory, narrative work, and creative projects for leaders building into the unknown.</p>
+          <a href="/about.html" class="about-more">More about me &rarr;</a>
+        </div>
+      </div>
+    </section>
 
-        <div class="footer-brand" data-global="site_name">Light Work</div>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cta">
+          <p class="footer-cta-text">Ready to start a conversation?</p>
+          <a href="/connect.html" class="footer-cta-link">Book an intro conversation &rarr;</a>
+        </div>
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <a href="mailto:haley@thisislight.work">haley@thisislight.work</a>
+          <a href="https://haleymchung.substack.com/" target="_blank" rel="noopener">Light Table on Substack</a>
+          <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-icon-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <strong>Site</strong>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/the-work.html">The Work</a>
+          <a href="/connect.html">Connect</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copyright">Light Work Studios &copy; 2026</span>
+          <button class="footer-theme-toggle" id="themeToggle" aria-label="Toggle theme">◑</button>
+        </div>
+      </div>
     </footer>
 
-    <script src="/nav.js"></script>
-    <script src="/content-loader.js"></script>
-    <script>
-        // Load home page content
-        document.addEventListener('DOMContentLoaded', async () => {
-            await loadPageContent('home');
+  </div><!-- /page-wrap -->
 
-            // Custom population for complex structures
-            const response = await fetch('/content.json');
-            const data = await response.json();
-            const homeData = data.home;
-
-            // Populate audience list
-            if (homeData.audience && homeData.audience.items) {
-                const audienceList = document.getElementById('audience-list');
-                audienceList.innerHTML = homeData.audience.items.map(item => `<li>${item}</li>`).join('');
-            }
-
-            // Populate three modes
-            if (homeData.modes && homeData.modes.items) {
-                const modesContainer = document.getElementById('modes-container');
-                modesContainer.innerHTML = homeData.modes.items.map(mode => `
-                    <div class="section">
-                        <div class="section-content">
-                            <h3 class="section-label">${mode.name}</h3>
-                            <div class="section-text">
-                                <p>${mode.description}</p>
-                                <a href="${mode.link}">Learn more →</a>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            }
-
-            // Set hero values
-            document.querySelector('[data-field="title"]').textContent = homeData.hero.title;
-            document.querySelector('[data-field="subtitle"]').textContent = homeData.hero.subtitle;
-            document.querySelector('[data-field="intro"]').textContent = homeData.hero.intro;
-            document.querySelector('[data-field="cta_text"]').textContent = homeData.hero.cta_text;
-
-            // Set audience section
-            document.querySelector('[data-field="audience_heading"]').textContent = homeData.audience.heading;
-            document.querySelector('[data-field="audience_context"]').textContent = homeData.audience.context;
-
-            // Set come cloudy section
-            document.querySelector('[data-field="come_cloudy_title"]').textContent = homeData.come_cloudy.title;
-            document.querySelector('[data-field="come_cloudy_description"]').textContent = homeData.come_cloudy.description;
-            document.querySelector('[data-field="come_cloudy_closing"]').textContent = homeData.come_cloudy.closing;
-
-            // Set modes heading
-            document.querySelector('[data-field="modes_heading"]').textContent = homeData.modes.heading;
-
-            // Set about preview
-            if (homeData.about_preview.photo) {
-                document.getElementById('about-photo').src = homeData.about_preview.photo;
-            }
-            document.querySelector('[data-field="about_name"]').textContent = homeData.about_preview.name;
-            document.querySelector('[data-field="about_bio"]').textContent = homeData.about_preview.bio;
-            document.querySelector('[data-field="about_link_text"]').textContent = homeData.about_preview.link_text;
-        });
-
-        // Netlify Identity redirect
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
-    </script>
+  <script src="/content-loader.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
