@@ -50,14 +50,6 @@
 
     <!-- Tier index -->
     <nav class="tier-index fade-in" aria-label="Engagement types">
-      <a href="#tier-session" class="tier-index-item">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="50" cy="33" r="22"/>
-          <line x1="50" y1="55" x2="50" y2="80"/>
-          <line x1="36" y1="68" x2="64" y2="68"/>
-        </svg>
-        <span>Session</span>
-      </a>
       <a href="#tier-residency" class="tier-index-item">
         <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <polygon points="50,12 88,76 12,76"/>
@@ -82,6 +74,14 @@
         </svg>
         <span>Incubator</span>
       </a>
+      <a href="#tier-session" class="tier-index-item">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="50" cy="33" r="22"/>
+          <line x1="50" y1="55" x2="50" y2="80"/>
+          <line x1="36" y1="68" x2="64" y2="68"/>
+        </svg>
+        <span>Session</span>
+      </a>
     </nav>
 
     <!-- How It Goes -->
@@ -95,38 +95,38 @@
 
     <hr class="rule">
 
-    <!-- Working With Me — tiers with symbol animation -->
-    <section class="tiers-section fade-in" id="working-with-me">
-      <span class="section-label">Working With Me</span>
-      <span class="tiers-intro">One practice, different depths of engagement.</span>
+    <!-- Modes — tiers with symbol animation -->
+    <section class="tiers-section fade-in" id="modes">
+      <span class="section-label">Modes</span>
 
       <div class="tiers-grid">
         <!-- Tier content -->
         <div class="tiers-content">
 
-          <div class="tier" data-tier="0" id="tier-session">
+          <div class="tier" data-tier="0" id="tier-residency">
+            <h3 class="tier-name">Residency</h3>
+            <p data-field="residency_description">Three months of steady strategic partnership. Regular sessions, light async access, and a consistent rhythm of support and clarity. I'm a tuning fork for your direction — helping you hear what's already there and move with confidence. You leave with an artifact that captures what we've surfaced together. This is where most engagements begin.</p>
+          </div>
+
+          <div class="tier" data-tier="1" id="tier-consigliere">
+            <h3 class="tier-name">Consigliere</h3>
+            <p data-field="consigliere_description">Ongoing retained advisory — like adding a trusted voice to your board, or creating a board where you don't have one. Regular rhythm, full async access, and the kind of honest, wide-ranging counsel that keeps your thinking sharp across every dimension of what you're building. For leaders who want a strategic partner for the season, not just a project.</p>
+          </div>
+
+          <div class="tier" data-tier="2" id="tier-incubator">
+            <h3 class="tier-name">Incubator</h3>
+            <p data-field="incubator_description">Co-building. Your venture takes up residence in my mind. Embedded collaboration, fractional leadership, creative direction — for launches, new chapters, and builds that need a strategic co-creator, not just an advisor. We design the structure together around what you're making.</p>
+          </div>
+
+          <p class="tiers-footer-note">Residency, Consigliere, and Incubator engagements begin with a conversation. <a href="/connect.html">Book an intro conversation &mdash; free</a></p>
+
+          <div class="tier" data-tier="3" id="tier-session">
             <h3 class="tier-name">Session</h3>
             <span class="tier-price">$1,000</span>
             <p data-field="session_description">A short intake call followed by a full working session. Full attention, no ongoing commitment. You come with a question, a decision, a knot — we work it together and you leave sharper. Good for a pressure-test, a specific crossroads, or when you need someone outside the room to tell you what they see.</p>
             <a href="/connect.html#session" class="tier-cta">Book a Session</a>
           </div>
 
-          <div class="tier" data-tier="1" id="tier-residency">
-            <h3 class="tier-name">Residency</h3>
-            <p data-field="residency_description">Three months of steady strategic partnership. Regular sessions, light async access, and a consistent rhythm of support and clarity. I'm a tuning fork for your direction — helping you hear what's already there and move with confidence. You leave with an artifact that captures what we've surfaced together. This is where most engagements begin.</p>
-          </div>
-
-          <div class="tier" data-tier="2" id="tier-consigliere">
-            <h3 class="tier-name">Consigliere</h3>
-            <p data-field="consigliere_description">Ongoing retained advisory — like adding a trusted voice to your board, or creating a board where you don't have one. Regular rhythm, full async access, and the kind of honest, wide-ranging counsel that keeps your thinking sharp across every dimension of what you're building. For leaders who want a strategic partner for the season, not just a project.</p>
-          </div>
-
-          <div class="tier" data-tier="3" id="tier-incubator">
-            <h3 class="tier-name">Incubator</h3>
-            <p data-field="incubator_description">Co-building. Your venture takes up residence in my mind. Embedded collaboration, fractional leadership, creative direction — for launches, new chapters, and builds that need a strategic co-creator, not just an advisor. We design the structure together around what you're making.</p>
-          </div>
-
-          <p class="tiers-footer-note">Residency, Consigliere, and Incubator engagements begin with a conversation. <a href="/connect.html">Book an intro conversation &mdash; free</a></p>
           <p class="tiers-footer-note">I believe good counsel should be available to those doing important work. I reserve a small number of spots each season for sliding scale and scholarship engagements — if cost is a barrier, <a href="mailto:haley@thisislight.work">reach out</a>.</p>
 
         </div>
@@ -135,32 +135,36 @@
         <div class="tiers-symbol-col" aria-hidden="true">
           <div class="tier-symbol-display" id="tierSymbolDisplay">
 
-            <!-- Session: Venus / mirror ♀ -->
-            <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="50" cy="33" r="22"/>
-              <line x1="50" y1="55" x2="50" y2="80"/>
-              <line x1="36" y1="68" x2="64" y2="68"/>
-            </svg>
-
             <!-- Residency: Air / upward triangle with line -->
             <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="50,12 88,76 12,76"/>
               <line x1="27" y1="49" x2="73" y2="49"/>
             </svg>
 
-            <!-- Consigliere: Alchemical sun ☉ -->
+            <!-- Consigliere: Alchemical sun ☉ with 8 spokes -->
             <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="50" cy="50" r="30"/>
+              <circle cx="50" cy="50" r="28"/>
               <circle cx="50" cy="50" r="5"/>
-              <line x1="50" y1="12" x2="50" y2="18"/>
-              <line x1="88" y1="50" x2="82" y2="50"/>
-              <line x1="50" y1="88" x2="50" y2="82"/>
-              <line x1="12" y1="50" x2="18" y2="50"/>
+              <line x1="50" y1="12" x2="50" y2="19"/>
+              <line x1="88" y1="50" x2="81" y2="50"/>
+              <line x1="50" y1="88" x2="50" y2="81"/>
+              <line x1="12" y1="50" x2="19" y2="50"/>
+              <line x1="75" y1="25" x2="70" y2="30"/>
+              <line x1="75" y1="75" x2="70" y2="70"/>
+              <line x1="25" y1="75" x2="30" y2="70"/>
+              <line x1="25" y1="25" x2="30" y2="30"/>
             </svg>
 
             <!-- Incubator: Water / downward triangle -->
             <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="50,88 88,24 12,24"/>
+            </svg>
+
+            <!-- Session: Venus / mirror ♀ -->
+            <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="50" cy="33" r="22"/>
+              <line x1="50" y1="55" x2="50" y2="80"/>
+              <line x1="36" y1="68" x2="64" y2="68"/>
             </svg>
 
           </div>
