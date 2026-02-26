@@ -30,21 +30,21 @@
     "cta_text": "Start with a conversation. We'll talk about what you're navigating."
   },
   "the_work": {
-    "page_subtitle": "As part of Light Work's advising, I offer different depths of engagement. The shape of the work emerges from what you're navigating.",
-    "how_it_goes": [
-      "I begin with discovery — part spelunking, part research, part conversation. The work begins immediately, and the shape of the engagement emerges as we unlock insights. Within days, we're boots on the ground together, capturing what will inform the next several years of your strategy.",
-      "Whether we're working on personal direction, organizational narrative, or something entirely bespoke, it starts the same way: I listen for the thread."
-    ],
-    "session_description": "A short intake call followed by a full working session. Full attention, no ongoing commitment. You come with a question, a decision, a knot — we work it together and you leave sharper. Good for a pressure-test, a specific crossroads, or when you need someone outside the room to tell you what they see.",
-    "residency_description": "Three months of steady strategic partnership. Regular sessions, light async access, and a consistent rhythm of support and clarity. I'm a tuning fork for your direction — helping you hear what's already there and move with confidence. You leave with an artifact that captures what we've surfaced together. This is where most engagements begin.",
-    "consigliere_description": "Ongoing retained advisory — like adding a trusted voice to your board, or creating a board where you don't have one. Regular rhythm, full async access, and the kind of honest, wide-ranging counsel that keeps your thinking sharp across every dimension of what you're building. For leaders who want a strategic partner for the season, not just a project.",
-    "incubator_description": "Co-building. Your venture takes up residence in my mind. Embedded collaboration, fractional leadership, creative direction — for launches, new chapters, and builds that need a strategic co-creator, not just an advisor. We design the structure together around what you're making.",
     "emerging_tech": [
       "Emerging technology is reshaping how organizations work, tell their stories, and serve their people. Before you invest, do you know what narrative your organization carries well enough to know where technology serves it — and where it would be rejected?",
       "Most AI adoption starts from the tool and works backward. I start from the organism — the identity, the culture, the operations — and work forward. Narrative-led technology alignment means starting from who you are, not from what's trending. This is available as part of any engagement or as a standalone assessment."
     ],
-    "cta_italic": "Mirror, divining rod, or compass tune-up — whatever you need, it starts with a conversation.",
-    "scholarship_note": "I believe good counsel should be available to those doing important work. I reserve a small number of spots each season for sliding scale and scholarship engagements — if cost is a barrier, reach out."
+    "page_subtitle": "As part of Light Work's advising, I offer different depths of engagement. The shape of the work emerges from what you're navigating.",
+    "consigliere_description": "Ongoing retained advisory — like adding a trusted voice to your board, or creating a board where you don't have one. Regular rhythm, full async access, and the kind of honest, wide-ranging counsel that keeps your thinking sharp across every dimension of what you're building. For leaders who want a strategic partner for the season, not just a project.",
+    "scholarship_note": "I believe good counsel should be available to those doing important work. I reserve a small number of spots each season for sliding scale and scholarship engagements — if cost is a barrier, reach out.",
+    "session_description": "A short intake call and inputs download, followed by a full working session. Full attention, and some interstitial work. This is designed especially to provide ongoing ad hoc support for clients. Come with a question, a decision, a knot, and we can work it together and leave you sharper. Choose the Bookend Session to pressure-test a new question, address a specific crossroads, or when you need to re-up on outside the room intuition.",
+    "residency_description": "Three months of steady strategic partnership. Regular sessions, light async access, and a consistent rhythm of support and clarity. I'm a tuning fork for your direction — helping you hear what's already there and move with confidence. You leave with an artifact that captures what we've surfaced together. This is where most engagements begin.",
+    "how_it_goes": [
+      "I begin with discovery — part spelunking, part research, part conversation. The work begins immediately, and the shape of the engagement emerges as we unlock insights. Within days, we're boots on the ground together, capturing what will inform the next several years of your strategy.",
+      "Whether we're working on personal direction, organizational narrative, or something entirely bespoke, it starts the same way: I listen for the thread."
+    ],
+    "incubator_description": "Co-building and sleeves rolled up, this is the deepest mode. I like to think of it as co-founder-for-hire. Your venture takes up residence in the Light Work core focus. Incubator advising has a limited number of slots per season, to facilitate embedded collaboration, fractional leadership, and creative direction. This is the right mode for launches, new chapters, and builds that need a strategic co-creator, not just an advisor. We design the structure together around what you're making.",
+    "cta_italic": "Mirror, divining rod, or compass tune-up — whatever you need, it starts with a conversation."
   },
   "connect": {
     "intro": "Start with a conversation. We'll talk about what you're navigating and whether there's a good fit.",
