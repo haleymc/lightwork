@@ -357,6 +357,42 @@ hr.rule {
   color: var(--text-secondary);
 }
 
+/* === TIER INDEX (symbol nav) === */
+
+.tier-index {
+  display: flex;
+  gap: 3.5rem;
+  margin: 3.5rem 0 0;
+  padding: 0 2.5rem 5rem;
+  max-width: var(--max-content);
+}
+
+.tier-index-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.tier-index-item:hover {
+  color: var(--text);
+}
+
+.tier-index-item svg {
+  width: 34px;
+  height: 34px;
+}
+
+.tier-index-item span {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 /* === WORKING WITH ME === */
 
 .tiers-section {
@@ -909,6 +945,12 @@ hr.rule {
 
   .come-cloudy {
     padding: 6rem 1.5rem;
+  }
+
+  .tier-index {
+    gap: 2rem;
+    padding: 0 1.5rem 4rem;
+    flex-wrap: wrap;
   }
 
   .tiers-section {
