@@ -7,13 +7,14 @@ public_folder: "/images"
 
 collections:
   - name: "content"
-    label: "Content"
+    label: "Site Content"
     files:
 
-      - name: "home"
-        label: "Home Page"
+      - name: "all"
+        label: "All Pages"
         file: "content.json"
         fields:
+
           - label: "Home"
             name: "home"
             widget: "object"
@@ -24,9 +25,9 @@ collections:
                 widget: "list"
                 field: {label: "Paragraph", name: "item", widget: "text"}
               - {label: "Come Cloudy Body", name: "come_cloudy_body", widget: "text"}
-              - {label: "About Preview — First Paragraph", name: "about_preview_p1", widget: "text"}
-              - {label: "About Preview — Second Paragraph", name: "about_preview_p2", widget: "text"}
-              - {label: "About Preview — Third Paragraph", name: "about_preview_p3", widget: "text"}
+              - {label: "About Preview — Paragraph 1", name: "about_preview_p1", widget: "text"}
+              - {label: "About Preview — Paragraph 2", name: "about_preview_p2", widget: "text"}
+              - {label: "About Preview — Paragraph 3", name: "about_preview_p3", widget: "text"}
 
           - label: "About"
             name: "about"
@@ -56,7 +57,7 @@ collections:
                 name: "how_it_goes"
                 widget: "list"
                 field: {label: "Paragraph", name: "item", widget: "text"}
-              - {label: "Session Description", name: "session_description", widget: "text"}
+              - {label: "Bookend Session Description", name: "session_description", widget: "text"}
               - {label: "Residency Description", name: "residency_description", widget: "text"}
               - {label: "Consigliere Description", name: "consigliere_description", widget: "text"}
               - {label: "Incubator Description", name: "incubator_description", widget: "text"}
@@ -72,7 +73,8 @@ collections:
             widget: "object"
             fields:
               - {label: "Intro", name: "intro", widget: "text"}
-              - {label: "Session Description", name: "session_description", widget: "text"}
+              - {label: "Bookend Session Description", name: "session_description", widget: "text"}
+              - {label: "Scholarship Note", name: "scholarship_note", widget: "text"}
 
           - label: "Global Settings"
             name: "global"
