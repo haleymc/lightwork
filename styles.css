@@ -166,19 +166,21 @@ p:last-child {
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
   color: var(--text);
-  opacity: 1;
 }
 
-.nav-links .nav-book a {
+.nav-links a.active {
   color: var(--text);
   border-bottom: 1px solid var(--text);
   padding-bottom: 1px;
 }
 
-/* Theme toggle (Ink / Light) — easter egg in footer */
+.nav-links .nav-book a {
+  color: var(--text);
+}
+
+/* Theme toggle (Ink / Light) */
 .footer-theme-toggle {
   background: none;
   border: none;
@@ -192,6 +194,22 @@ p:last-child {
 
 .footer-theme-toggle:hover {
   color: rgba(255,255,255,0.55);
+}
+
+.nav-theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.nav-theme-toggle:hover {
+  color: var(--text);
 }
 
 .footer-icon-link {
@@ -305,6 +323,23 @@ hr.rule {
   line-height: 1.72;
   max-width: 540px;
   margin-bottom: 3rem;
+}
+
+.hero .tagline-open {
+  font-family: 'Baskervville', serif;
+  font-style: italic;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.hero-leave {
+  font-family: 'Baskervville', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
 }
 
 .hero-cta {
