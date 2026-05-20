@@ -51,13 +51,6 @@
 
     <!-- Tier index -->
     <nav class="tier-index fade-in" aria-label="Engagement types">
-      <a href="#tier-session" class="tier-index-item">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="32" y1="22" x2="32" y2="78"/>
-          <line x1="68" y1="22" x2="68" y2="78"/>
-        </svg>
-        <span>Bookend Session</span>
-      </a>
       <a href="#tier-consigliere" class="tier-index-item">
         <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="50" cy="50" r="22"/>
@@ -74,18 +67,14 @@
         </svg>
         <span>Incubator</span>
       </a>
+      <a href="#tier-session" class="tier-index-item">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="32" y1="22" x2="32" y2="78"/>
+          <line x1="68" y1="22" x2="68" y2="78"/>
+        </svg>
+        <span>Bookend Session</span>
+      </a>
     </nav>
-
-    <!-- How It Goes -->
-    <section class="section fade-in" id="how-it-goes">
-      <span class="section-label">How It Goes</span>
-      <div data-paragraphs="how_it_goes">
-        <p>I begin with discovery — part spelunking, part research, part conversation. The work begins immediately, and the shape of the engagement emerges as we unlock insights. Within days, we're boots on the ground together, capturing what will inform the next several years of your strategy.</p>
-        <p>Whether we're working on personal direction, organizational narrative, or something entirely bespoke, it starts the same way: I listen for the thread.</p>
-      </div>
-    </section>
-
-    <hr class="rule">
 
     <!-- Modes — tiers with symbol animation -->
     <section class="tiers-section fade-in" id="modes">
@@ -95,20 +84,20 @@
         <!-- Tier content -->
         <div class="tiers-content">
 
-          <div class="tier" data-tier="0" id="tier-session">
-            <h3 class="tier-name">Bookend Session</h3>
-            <p data-field="session_description">A short intake call followed by a full working session. Full attention, no ongoing commitment. You come with a question, a decision, a knot — we work it together and you leave sharper. Good for a pressure-test, a specific crossroads, or when you need someone outside the room to tell you what they see.</p>
-            <a href="/connect.html#session" class="tier-cta">Book a Bookend Session</a>
-          </div>
-
-          <div class="tier" data-tier="1" id="tier-consigliere">
+          <div class="tier" data-tier="0" id="tier-consigliere">
             <h3 class="tier-name">Consigliere</h3>
             <p data-field="consigliere_description">Ongoing retained advisory — like adding a trusted voice to your board, or creating a board where you don't have one. Regular rhythm, full async access, and the kind of honest, wide-ranging counsel that keeps your thinking sharp across every dimension of what you're building. For leaders who want a strategic partner for the season, not just a project.</p>
           </div>
 
-          <div class="tier" data-tier="2" id="tier-incubator">
+          <div class="tier" data-tier="1" id="tier-incubator">
             <h3 class="tier-name">Incubator</h3>
             <p data-field="incubator_description">Co-building. Your venture takes up residence in my mind. Embedded collaboration, fractional leadership, creative direction — for launches, new chapters, and builds that need a strategic co-creator, not just an advisor. We design the structure together around what you're making.</p>
+          </div>
+
+          <div class="tier" data-tier="2" id="tier-session">
+            <h3 class="tier-name">Bookend Session</h3>
+            <p data-field="session_description">A short intake call, a gap, then a full working session. Come with a question, a crossroads, or a knot — I name what's hard to see from the inside and leave you sharper, with clarity and a path forward.</p>
+            <a href="/connect.html#session" class="tier-cta">Book a Bookend Session</a>
           </div>
 
           <p class="tiers-footer-note">I believe good counsel should be available to those doing important work. I reserve a small number of spots each season for sliding scale and scholarship engagements — if cost is a barrier, <a href="mailto:haley@thisislight.work">reach out</a>.</p>
@@ -119,12 +108,6 @@
         <div class="tiers-symbol-col" aria-hidden="true">
           <div class="tier-symbol-display" id="tierSymbolDisplay">
 
-            <!-- Bookend Session: two vertical lines -->
-            <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="32" y1="22" x2="32" y2="78"/>
-              <line x1="68" y1="22" x2="68" y2="78"/>
-            </svg>
-
             <!-- Consigliere: compass / tuning fork -->
             <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="50" cy="50" r="22"/>
@@ -134,9 +117,15 @@
               <line x1="72" y1="50" x2="85" y2="50"/>
             </svg>
 
-            <!-- Incubator: Water / downward triangle -->
+            <!-- Incubator: downward triangle -->
             <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="50,88 88,24 12,24"/>
+            </svg>
+
+            <!-- Bookend Session: two vertical lines -->
+            <svg class="tier-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="32" y1="22" x2="32" y2="78"/>
+              <line x1="68" y1="22" x2="68" y2="78"/>
             </svg>
 
           </div>
