@@ -325,6 +325,10 @@ hr.rule {
   margin-bottom: 3rem;
 }
 
+#how-we-work .tier {
+  padding: 2rem 0;
+}
+
 .hero .tagline-open {
   font-family: 'Baskervville', serif;
   font-style: italic;
