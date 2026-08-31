@@ -85,24 +85,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // === THEME TOGGLE (Ink / Light) ===
-  const themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    function syncToggle() {
+  const themeToggles = document.querySelectorAll('.theme-toggle-btn');
+  if (themeToggles.length > 0) {
+    function syncToggles() {
       const isInk = document.documentElement.dataset.palette === 'ink';
-      themeToggle.setAttribute('aria-label', isInk ? 'Switch to Light mode' : 'Switch to Ink mode');
+      themeToggles.forEach(btn => {
+        btn.setAttribute('aria-label', isInk ? 'Switch to Light mode' : 'Switch to Ink mode');
+      });
     }
-    syncToggle();
+    syncToggles();
 
-    themeToggle.addEventListener('click', () => {
-      const isInk = document.documentElement.dataset.palette === 'ink';
-      if (isInk) {
-        delete document.documentElement.dataset.palette;
-        localStorage.setItem('lw-theme', '');
-      } else {
-        document.documentElement.dataset.palette = 'ink';
-        localStorage.setItem('lw-theme', 'ink');
-      }
-      syncToggle();
+    themeToggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isInk = document.documentElement.dataset.palette === 'ink';
+        if (isInk) {
+          delete document.documentElement.dataset.palette;
+          localStorage.setItem('lw-theme', '');
+        } else {
+          document.documentElement.dataset.palette = 'ink';
+          localStorage.setItem('lw-theme', 'ink');
+        }
+        syncToggles();
+      });
     });
   }
 
