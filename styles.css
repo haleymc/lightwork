@@ -283,6 +283,10 @@ hr.rule {
   max-width: var(--max-content);
   margin: 0 auto;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  column-gap: 5rem;
+  align-items: start;
 }
 
 .hero-seal {
@@ -304,6 +308,7 @@ hr.rule {
   line-height: 1;
   margin-bottom: 0.5rem;
   display: block;
+  grid-column: 1 / -1;
 }
 
 .hero-byline {
@@ -775,6 +780,140 @@ hr.rule {
   margin-bottom: 6rem;
 }
 
+.celestial-map {
+  display: block;
+  width: 100%;
+}
+
+.celestial-plate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2.5rem 0;
+}
+
+.celestial-map--north {
+  max-width: 680px;
+  width: 100%;
+  height: auto;
+}
+
+.celestial-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.celestial-map-south-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2.5rem 2rem;
+}
+
+.celestial-map--south {
+  width: auto;
+  max-width: 520px;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.modes-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.modes-label-row .section-label {
+  margin-bottom: 0;
+}
+
+.mode-icon-key {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.mode-icon-key svg {
+  width: 28px;
+  height: 28px;
+  color: var(--text-secondary);
+}
+
+.tier-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tier-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  color: var(--text);
+}
+
+.home-image-left {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-moon {
+  width: 380px;
+  height: auto;
+}
+
+.home-moon-abs {
+  grid-column: 2;
+  grid-row: 2 / span 5;
+  position: static;
+  width: calc(100% + 2.5rem);
+  height: auto;
+  margin-top: 2.5rem;
+  margin-right: -2.5rem;
+  align-self: start;
+  pointer-events: none;
+}
+
+.home-constellation {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin-left: -1.5rem;
+}
+
+.home-eclipse {
+  width: 480px;
+  max-width: 100%;
+  height: auto;
+  margin-left: -1.5rem;
+}
+
+.about-haley-grid {
+  display: flex;
+  gap: 3.5rem;
+  align-items: flex-start;
+  margin-bottom: 4.5rem;
+}
+
+.about-haley-photo {
+  width: 200px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.about-haley-grid .prose-section {
+  margin-bottom: 0;
+  flex: 1;
+}
+
 .prose-section {
   max-width: var(--max-prose);
   margin-bottom: 4.5rem;
@@ -790,6 +929,10 @@ hr.rule {
 .prose-section p {
   font-size: 1.05rem;
   line-height: 1.78;
+}
+
+.prose-section [data-paragraphs] {
+  display: contents;
 }
 
 .about-meta {
@@ -969,6 +1112,11 @@ hr.rule {
 
   .hero {
     padding: 6rem 1.5rem 5rem;
+    display: block;
+  }
+
+  .home-moon-abs {
+    display: none;
   }
 
   .hero-seal {
@@ -1037,6 +1185,24 @@ hr.rule {
 
   .about-page-body {
     padding: 4rem 1.5rem 6rem;
+  }
+
+  .studio-grid {
+    flex-direction: column;
+  }
+
+  .studio-image {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .about-haley-grid {
+    flex-direction: column;
+  }
+
+  .about-haley-photo {
+    width: 100%;
+    max-width: 280px;
   }
 
   .connect-page,
