@@ -283,10 +283,6 @@ hr.rule {
   max-width: var(--max-content);
   margin: 0 auto;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  column-gap: 5rem;
-  align-items: start;
 }
 
 .hero-seal {
@@ -308,7 +304,6 @@ hr.rule {
   line-height: 1;
   margin-bottom: 0.5rem;
   display: block;
-  grid-column: 1 / -1;
 }
 
 .hero-byline {
